@@ -49,7 +49,7 @@
               
               for (let row of a)
               {
-                  if (row.innerText.includes(filterText.value))
+                  if (row.innerText.toLowerCase().includes(filterText.value.toLowerCase()))
                   {
                       row.classList.remove("d-none");
                   }
